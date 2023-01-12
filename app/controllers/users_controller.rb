@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  skip_before_action :authorize, only: [:create]
+
   # GET /users
   def index
     @users = User.all
@@ -21,13 +23,9 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.create(user_params)
-    if @user.valid?
-    token = encode_token({ user_id: @user.id })
-    render json: { user: @user, token: token }, status: :created
-    else
-      render json: { error: 'Invalid token' }, status: :unprocessable_entity
-    end
+    user = User.create!(user_params)
+    session[:user_id] = user.id
+    render json: user, status: :created
   end
 
   # PATCH/PUT /users/1
@@ -53,6 +51,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.permit(:name, :email, :password, :password_confirmation, :email, :is_admin)
+      params.permit(:name, :email, :password, :password_confirmation, :email)
     end
 end
