@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_08_091314) do
     t.date "date"
     t.string "description"
     t.string "about"
+    t.string "image"
     t.string "location"
     t.integer "user_id"
     t.time "time"
