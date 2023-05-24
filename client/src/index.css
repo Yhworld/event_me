@@ -1,13 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li.yay {
+    list-style: none;
+    text-align: end;
+    text-decoration: underline;
+    padding-top: 5px;
+    color: #5e59dc;
+}
+
+button#primary-btn {
+    background: #5e59dc;
+    border: none;
+}
+
+input.input.form-control {
+    padding-right: 5rem;
+}
+
+div#login {
+    line-height: 2;
+}
+
+span.pl-2 {
+    padding-left: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+#authheader {
+    color: #5e59dc;
+}
+
+span.navbar-brand {
+    color: #5e59dc;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+span.normal {
+    padding: 5px 5px 5px 5px;
+    background: #5e59dc;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+body::before {
+    display: block;
+    content: "";
+    height: 50px;
+  }
+
+#heropic {
+    background-image: url('./anthony-delanoix-hzgs56Ze49s-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left; 
+    height: 60vh;
+}
+#we {
+    background-color: rgb(0 0 0 / 18%);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.herotext h1 {
+    font-family: 'Anton';
+}
+
+#herop {
+    font-family: 'Poppins', sans-serif;;
+}
+
+h3.des, .eventheader {
+    font-size: 25px;
+    margin-top: 3rem;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+#headrow {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linecat{
+    margin-left: 45%;
+    margin-right: 45%;
+    height: 4px;
+    background: blue;
+    display: none;
+}
+
+p#ui {
+    font-size: 22px;
+    color: #0000ed;
+}
+
+#headcol {
+    gap: 20px;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    background: #ffc0cb21;
+}
+
+input#slocation {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid blue;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #5e59dc;
+    font-size: 26px;
+}
+
+div#popularity {
+    height: 15vh;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 3rem;
+}
+span.spanlocation {
+    color: #5e59dc;
+}
+input#slocation:focus {
+    box-shadow: none;
+}
+
+div#divpop {
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+img.card-img-top.img-fluid {
+    height: 10rem;
+}
+
+.bg-light.w-100.card {
+    border: none;
+    box-shadow: 0px 1px #e1dfdf;
 }
